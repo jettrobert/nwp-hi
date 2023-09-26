@@ -104,7 +104,7 @@ footer {
 .author-container {
     display: flex;
     align-items: center;
-    margin-top: 0px;  /* Ensures the container is 10 pixels below the title */
+    margin-top: -50px;  /* Ensures the container is 10 pixels below the title */
     background-color: rgb(0, 0, 0);  /* Surrounds the container with a white box */
     border-radius: 20px;  /* Rounds the corners with a radius of 20 pixels */
     padding: 5px 15px 5px 5px;  /* Adds some padding inside the white box */
