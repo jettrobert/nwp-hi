@@ -106,7 +106,7 @@ const MyBlog = ({ posts }) => {
       </div>
       <div className="scrolling-text-container">
         <div className="scrolling-text">
-        यह NEW WORLD PERSON कॉंटेंट सेवा का एक परीक्षण है। यह केवल एक परीक्षण है।
+          NEW WORLD सामग्री सिस्टम में आपका स्वागत है। भविष्य हमारा है। हमें INSTAGRAM पर फॉलो करें ताकि आप अपडेटेड रहें।
         </div>
       </div>
       <div className="container" ref={containerRef}>
@@ -121,6 +121,21 @@ const MyBlog = ({ posts }) => {
         ))}
         <div className="box-spacer" />
       </div>
+
+      <div id="links-container">
+        <a href="https://www.instagram.com/new_world_person/" target="_blank" rel="noopener noreferrer">
+          INSTAGRAM
+        </a>
+        <span className="divider"> | </span>
+        <a href="https://www.newworldperson.com" target="_blank" rel="noopener noreferrer">
+          अन्य भाषाओं में पढ़ें
+        </a>
+        <span className="divider">|</span>
+        <a href="https://www.instagram.com/new_world_person/" target="_blank" rel="noopener noreferrer">
+          हमसे संपर्क करें
+        </a>
+      </div>
+
       <img id="bottom-logo" src="/logo-white.svg" alt="New World Person" />
     </>
   );
@@ -135,7 +150,7 @@ export async function getStaticProps() {
   try {
     posts = await api.posts.browse({
       limit: 15, // Feel free to adjust the limit
-      filter: 'tags:[hi]' // Only fetch posts with the 'hi' tag
+      filter: 'tags: [en]'
     });
   } catch (error) {
     console.error(error);
